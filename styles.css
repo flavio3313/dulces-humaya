@@ -1,0 +1,376 @@
+body {
+  background-color: rgb(19, 19, 19);
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  margin: 0;
+  padding: 0;
+  max-width: 960px;
+  display: grid;
+  justify-content: center;
+}
+
+.transparente {
+  background-color: transparent;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  padding: 0.5rem;
+}
+
+h4 {
+  color: blanchedalmond;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  padding: 0.5rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.centrar {
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* home */
+#home {
+  background-image: url(IMAGENES/Central/imagenCentral.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display:grid;
+}
+
+.card_home {
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  align-items: center;
+}
+
+#card_principal {
+  margin-left: 20px;
+  max-width: 23rem;
+  font-size:x-large;
+}
+
+.card-title {
+  color: blanchedalmond;
+}
+
+.card {
+  border: none;
+}
+
+/* productos */
+
+h5 {
+  color: peru;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: black;
+}
+
+#producto4 {
+  grid-row-start: 2;
+}
+
+#producto3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.contenedor_bt_productos {
+  text-align: center;
+}
+
+.texto_producto_resaltado {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: peru;
+  font-weight: bold;
+}
+
+.btn_productos {
+  color: peru;
+  border-color: peru;
+  border: solid 3px;
+  border-radius: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0px 15px;
+}
+
+.btn_productos:hover {
+  color: saddlebrown;
+  background-color: peru;
+}
+
+#productos a:hover {
+  color: saddlebrown;
+  background-color: peru;
+}
+
+.detalle_producto {
+  padding: 0rem 1rem;
+  padding-top: 2rem;
+}
+
+.fondobeige {
+  background-color: bisque;
+}
+
+.productos img {
+  min-height: 330px;
+}
+
+#destaque img {
+  padding: 20px;
+  max-width: 300px;
+}
+
+#producto_destaque {
+  max-width: 350px;
+}
+
+.texto_producto {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: blanchedalmond;
+}
+
+.texto_producto_destaque {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  color: dark;
+}
+
+/* info */
+
+i {
+  color: bisque;
+  font-size: 6rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 10px 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+#info p {
+  color: bisque;
+  font-size: smaller;
+}
+
+#info div {
+  min-width: 150px;
+}
+
+/* recetas */
+
+.recetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+#recetas {
+  background-color: rgb(64, 55, 39);
+}
+
+#recetas .card {
+  background-color: bisque;
+  border-radius: 0;
+}
+
+#recetas img {
+  border-radius: 0;
+}
+
+#recetas .card-title {
+  color: black;
+}
+/* contacto */
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#form2 {
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.formu {
+  background-color: beige;
+}
+
+input[type="text"],
+input[type="email"] {
+  background-color: rgb(64, 55, 39);
+  color: blanchedalmond;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  background-color: rgb(64, 55, 39);
+  color: blanchedalmond;
+  border-color: peru;
+}
+input[type="text"]:focus-within,
+input[type="email"]:focus-within {
+  box-shadow: none !important;
+}
+
+textarea {
+  background-color: rgb(64, 55, 39) !important;
+  color: blanchedalmond !important;
+  border-color: peru !important;
+  box-shadow: none !important;
+}
+
+/* footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px 5px;
+  padding: 0px 15px;
+  background-color: black;
+}
+#logo {
+  padding: 20px;
+  width: 150px;
+}
+
+#menu1 {
+  display: grid;
+  place-content: center;
+}
+#mapa {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.vertical {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#footer strong {
+  color: peru;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#footer a {
+  color: blanchedalmond;
+  text-decoration: none;
+  padding-bottom: 1rem;
+}
+
+#footer a:hover {
+  color: peru;
+}
+
+#footer p {
+  color: blanchedalmond;
+}
+
+.icon_tamanio {
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.icon_tamanio:hover {
+  color: peru;
+}
+
+#fin {
+  background-color: darkkhaki;
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  #home {
+    background-size: auto;
+    height: 300px;
+  }
+
+  #home #card_principal{
+    max-width: 16rem;
+    font-size:medium;
+    margin-top: 2rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #producto4 {
+    grid-row-start: 4;
+  }
+
+  #producto3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .contacto {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recetas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  i {
+    font-size: 4rem;
+  }
+
+  #info div {
+    min-width: 100px;
+  }
+
+  #menu1 {
+    grid-row-start: 3;
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+
+  .btn_productos {
+    margin-top: 1rem;
+  }
+}
